@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: linear-gradient(180deg, #754BFA 0%, #7A4FFB 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container {
+    background: #22252D;
+    width: 18em;
+    height: 35em;
+    border-radius: 20px;
+    box-shadow: 0px 4px 100px rgb(0 0 0 / 41%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main .container header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 14px 0px;
+    margin-bottom: -9px;
+}
+
+.main .container header p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FDFDFF;
+    margin: 0;
+}
+
+.main .container header p span{
+    color: #E1898B;
+}
+
+.main .container main {
+    height: 77px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 14px 0px;
+}
+
+.main .container main h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 67px;
+    color: #FDFDFF;
+    margin: 0;
+}
+
+.main .container footer {
+    background: #2A2D37;
+    border-radius: 20px;
+    width: 100%;
+    height: 22em;
+}
+
+.main .container footer .ul-footer {
+    list-style: none;
+    height: -webkit-fill-available;
+    padding: 15px 14px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.main .container footer .ul-footer .li-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+.main .container footer .ul-footer .li-footer .input-button {
+    background: #272B33;
+    border-radius: 10px;
+    width: 54px;
+    height: 54px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .container footer .ul-footer .li-footer .input-button:hover {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.1));
+    font-size: 150% !important;
+}
+
+.text-green {
+    color: #65CFC1;
+}
+
+.text-red {
+    color: #E1898B;
+    font-size: 24px !important;
+}
+
+.text-white {
+    color: #FDFDFF;
+}

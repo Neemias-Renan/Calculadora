@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora Básica</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <header>
+                <p id="subview"></p>
+            </header>
+            <main>
+                <h1 id="view"></h1>
+            </main>
+
+            <footer>
+                <ul class="ul-footer">
+                    <li class="li-footer">
+                        <input class="input-button text-green" type="button" onclick="Ac()" value="AC">
+                        <button class="input-button text-green" onclick="convertNumber()">
+                            <svg width="24" height="19" viewBox="0 0 24 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52273 8.32244V1.73864H4.53267V8.32244H2.52273ZM0.09375 6.03551V4.02557H6.94034V6.03551H0.09375ZM15.8572 0.772726L11.1697 18.1875H8.2081L12.8956 0.772726H15.8572ZM23.9911 13.8267V15.8082H17.1445V13.8267H23.9911Z"
+                                    fill="#65CFC1" />
+                            </svg>
+
+                        </button>
+                        <input class="input-button text-green" type="button" onclick="CalcOperation(5)" value="%">
+                        <input class="input-button text-red" type="button" onclick="CalcOperation(4)" value="÷">
+                    </li>
+                    <li class="li-footer">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(7)" value="7">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(8)" value="8">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(9)" value="9">
+                        <input class="input-button text-red" type="button" onclick="CalcOperation(3)" value="×">
+                    </li>
+                    <li class="li-footer">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(4)" value="4">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(5)" value="5">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(6)" value="6">
+                        <input class="input-button text-red" type="button" onclick="CalcOperation(2)"  value="-">
+                    </li>
+                    <li class="li-footer">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(1)" value="1">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(2)" value="2">
+                        <input class="input-button text-white" type="button" onclick="AddNumber(3)" value="3">
+                        <input class="input-button text-red" type="button" onclick="CalcOperation(1)" value="+">
+                    </li>
+                    <li class="li-footer">
+                        <button class="input-button text-white" onclick="Reset()">
+                            <svg width="24" height="22" viewBox="0 0 24 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 2.99067V8.99067M2 8.99067H8M2 8.99067L6.64 4.63067C8.02091 3.25209 9.81245 2.35964 11.7447 2.08779C13.6769 1.81593 15.6451 2.17941 17.3528 3.12344C19.0605 4.06747 20.4152 5.54091 21.2126 7.32177C22.0101 9.10263 22.2072 11.0944 21.7742 12.997C21.3413 14.8996 20.3017 16.61 18.8121 17.8704C17.3226 19.1308 15.4637 19.873 13.5157 19.9851C11.5677 20.0973 9.63598 19.5732 8.01166 18.492"
+                                    stroke="#FDFDFF" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <input class="input-button text-white" type="button" onclick="AddNumber(0)" value="0">
+                        <input class="input-button text-white" type="button" onclick="AddNumber('.')"value=".">
+                        <input class="input-button text-red" type="button" onclick="CalcOperation(6)" value="=">
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
